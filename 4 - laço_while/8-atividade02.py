@@ -27,4 +27,4 @@ if a == 'S':
     print(f'suam media é{media}')
 else:
     media2 = soma /qtd_notas
-    print(f'suan media é {media2}')
+    print(f'sua media é {media2}')

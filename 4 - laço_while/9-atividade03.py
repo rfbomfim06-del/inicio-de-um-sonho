@@ -7,6 +7,7 @@ quantidade = 0
 with True:
     numero = int(input('digite um numero: '))
     if numero <0:
+        break
     soma += numero
     quantidade +=1
 
@@ -14,4 +15,4 @@ if quantidade > 0:
     media = soma /quantidade
     print(f' amedia aritimetica doas {quantidade} numeros digitados é: {media}')
 else:
-    print('nehum numero posito')
+    print('nehum numero posit')
