@@ -15,11 +15,12 @@ os.system('cls')
 # print(f'valor do veotr na posiçao 2: {vetor[1]}')
 # print(f'valor do veotr na posiçao 3: {vetor[2]}')
 
-vetor_nomes = []
+# vetor_nomes = []
 
-for i in range(4):
-    nomes = input(f'digite seu nome: ')
-    vetor_nomes.append(nomes)
+# for i in range(4):
+#     nomes = input(f'digite seu nome: ')
+#     vetor_nomes.append(nomes)
 
-for i in range(4):
-    print(f'nomes:{vetor_nomes[i]}')
+# for i in range(4):
+#     print(f'nomes:{vetor_nomes[i]}')
+
