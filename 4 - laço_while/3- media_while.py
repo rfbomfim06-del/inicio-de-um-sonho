@@ -14,7 +14,7 @@ os.system('cls')
 #             print()
 #             print('nota invalida')
 
-# media = soma / quantidade_nota
+# media = nota / quantidade_nota
 # print(f'media: {media}')
 # print('== FIM ==')
 
@@ -36,6 +36,6 @@ for i in range (quantidade_nota):
             print()
             soma = soma = soma + nota
 
-media = soma / quantidade_nota
+media = nota / quantidade_nota
 print(f'media: {media}')
 print('== FIM ==')
