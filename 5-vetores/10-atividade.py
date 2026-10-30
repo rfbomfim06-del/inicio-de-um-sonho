@@ -52,7 +52,7 @@ while True:
             print('=== REMOVER PRODUTO ==')
             nome = input('qual produto deseja remover? ').strip().upper()
             if nome in lista_produtos:
-                lista_produtos.remove(nome).strip().upper()
+                lista_produtos.remove(nome)
                 print('produto excluido sucesso')
             else:
                 print(' protudo nao encontrado.')
