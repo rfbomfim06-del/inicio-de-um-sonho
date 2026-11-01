@@ -23,23 +23,49 @@ while True:
             posicao_jogador = input('Digite a posiçao do jogador: ').strip().upper()
             camisa_jogador = int(input('Digite a sua camisa do jogador: '))
             if nome_jogador == '':
-                print('o nome do joador deve ser inserido...')
+                print('o nome do jogador deve ser inserido...')
             else:
                 lista_jogadores.append(nome_jogador)
-                print('Produto cadastrado com sucesso!')
+                print('jogador cadastrado com sucesso!')
         case 2:
-            print('== LISTA DOS PACIENTES ==')
-            for paciente in lista_jogadores:
-                print(f'- {paciente}')
+            print('== LISTA DOS jogador ==')
+            for jogador in lista_jogadores:
+                print(f'- {jogador}')
             print(f'Total:{len(lista_jogadores)}')
         case 3:
             print('=== ATUALIZAR JOGADOR ==')
-            nome = input('qual paciente deseja atualizar? ').strip().upper()
+            nome = input('qual jogador deseja atualizar? ').strip().upper()
             if nome in lista_jogadores:
                 posicao = lista_jogadores.index(nome)
                 novo = input('novo nome: ').strip().upper()
                 lista_jogadores[posicao] = novo
-                print('paciente alterado com sucesso')
+                print('jogador alterado com sucesso')
             else:
-                print(' protudo nao encontrado.')
+                print(' jogador nao encontrado.')
+        case 4:
+            #DELETE(REMOVER)
+            print('=== REMOVER jogador ==')
+            nome = input('qual jogador deseja remover? ').strip().upper()
+            if nome in lista_jogadores:
+                lista_jogadores.remove(nome)
+                print('jogador excluido sucesso')
+            else:
+                print(' jogador nao encontrado.')
+        case 5:
+            #READ(LER / CONSULTA / BUSCAR)
+            print('=== ENCONTRAR jogador ==')
+            nome = input('qual jogador deseja encontrar? ').strip().upper()
+            if nome in lista_jogadores:
+                print('jogador encontrado')
+            else:
+                print(' jogador nao esta no sistema.')
+            
 
+        case 0:
+            print('Saindo do programa.....')
+            break
+        case _:
+            print('\nOpção inválida! \nTente novamente....')
+
+    input('Pressione uma tecla para continuar....').strip().upper()
+    os.system('cls')
