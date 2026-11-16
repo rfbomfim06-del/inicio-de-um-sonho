@@ -1,22 +1,37 @@
 import os
 os.system('cls')
 
-print('= insira a nota =')
-vetor_nota = []
-def notas(vetor_nota):
-    nota = vetor_nota
-    return nota
+def calcular_notas(lista_notas):
+    return sum(lista_notas) / len(lista_notas)
 
-QUANTIDADE_DE_NOTAS= 3
-for i in range(QUANTIDADE_DE_NOTAS):
-    nota = int(input('digite sua nota: '))
-    vetor_nota.append(nota)
+def mostrar_notas(lista_notas):
+    print('\n= EXIBINDO NOTAS =')
+    for nota in lista_notas:
+        print(f'Nota: {nota}')
+   
+def status_do_aluno(media):
+    if media >= 7:
+        resultado = 'Aprovado'
+    else:
+        resultado = 'Reprovado'
+    return resultado
 
+lista_notas = []
 
-soma = sum(vetor_nota)
-media = soma / QUANTIDADE_DE_NOTAS
-print('mostras notas')
-for posicao , nota in enumerate(vetor_nota, start=1):
-    print(f'{posicao}º: {nota}')
+print('= SOLICITANDO NOTAS =')
+for i in range(2):
+    while True:
+        nota = float(input('Digite uma nota: '))
+        if nota >= 0 and nota <= 10:
+            lista_notas.append(nota)
+            break
+        else:
+            print('Nota inválida, tente novamente!\n')
+   
+media = calcular_notas(lista_notas)
+status_aluno = status_do_aluno(media)
 
-print(f'media: {media}')
+print('\n= EXIBINDO RESULTADOS =')
+mostrar_notas(lista_notas)
+print(f'\nMédia: {media}')
+print(f'Situação do aluno: {status_aluno}')
