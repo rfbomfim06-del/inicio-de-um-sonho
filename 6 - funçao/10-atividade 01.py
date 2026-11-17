@@ -15,7 +15,7 @@ def verificar_par_impar(numero):
 print('= SOLICTANDO DADOS =')
 numero1 = int(input('digite o  numero: '))
 
-resultado = verificar_par_impar(numero)
+resultado = verificar_par_impar(numero1)
 
 print('= SOLICTANDO DADOS =')
-print(f'o numero {numero} é {resultado}')
+print(f'o numero {numero1} é {resultado}')
