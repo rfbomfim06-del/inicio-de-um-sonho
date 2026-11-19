@@ -1,8 +1,7 @@
 import os
 os.system('cls')
 
-pares = 0
-impares = 0
+
 
 def verificar_par_impar(numero):
     if numero % 2 == 0:
