@@ -8,7 +8,7 @@ def verificar_par_impar(numero):
         resultado = 'pares'
     else:
         resultado = 'impares'
-    return(resultado)
+    return resultado
 
 
 print('= SOLICTANDO DADOS =')
