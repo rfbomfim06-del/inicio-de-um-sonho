@@ -5,9 +5,9 @@ os.system('cls')
 
 def verificar_par_impar(numero):
     if numero % 2 == 0:
-        resultado = pares
+        resultado = 'pares'
     else:
-        resultado = impares
+        resultado = 'impares'
     return(resultado)
 
 
