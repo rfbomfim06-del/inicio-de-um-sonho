@@ -9,7 +9,7 @@ class clientes:
     telefone:str
     endereco:str
 
-QUANTIDADE_CLIENTEs = 3
+QUANTIDADE_CLIENTEs = 1
 
 lista_clientes = []
 
@@ -23,9 +23,9 @@ for i in range(QUANTIDADE_CLIENTEs):
     lista_clientes.append(novo_cliente)
 
     #salvando em um arquivo.
-    arquivo = 'dados_clientes.csv'
-    with open(arquivo, 'a') as arquivo_clientes:
+    arquivo = 'dados_fornecedor.csv'
+    with open(arquivo, 'w') as arquivo_fornecedor:
         for cliente in lista_clientes:
-            arquivo_clientes.write(f'{cliente.nome}, {cliente.email}, {cliente.telefone}, {cliente.endereco}\n')
+            arquivo_fornecedor.write(f'{cliente.nome}, {cliente.email}, {cliente.telefone}, {cliente.endereco}\n')
 
     print('cliente salvo com sucesso')

@@ -9,13 +9,13 @@ class clientes:
     telefone:str
     endereco:str
 
-QUANTIDADE_CLIENTEs = 3
+
 
 lista_clientes = []
 
-arquivo = 'dados_clientes.csv'
-with open(arquivo,'r') as arquivo_clientes:
-    for linha in arquivo_clientes:
+arquivo = 'dados_fornecedor.csv'
+with open(arquivo,'r') as arquivo_fornecedor:
+    for linha in arquivo_fornecedor:
         nome,email,telefone,endereco = linha.strip().split(',')
         lista_clientes.append(clientes(
             nome = nome,
@@ -30,3 +30,4 @@ for cliente in lista_clientes:
     print(f'email:{cliente.email}')
     print(f'telefone:{cliente.telefone}')
     print(f'endereco:{cliente.endereco}')
+    print('='*85)
